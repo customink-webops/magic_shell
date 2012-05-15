@@ -24,6 +24,7 @@ Use the `magic_shell_alias` resource to create a command alias.
 
     magic_shell_alias "myrailsapp" do
       command "cd /opt/myrailsapp/current"
+      action :add
     end
 
 This will alias `myrailsapp` to `cd /opt/myrailsapp/current`
