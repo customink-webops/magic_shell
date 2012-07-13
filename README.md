@@ -1,3 +1,6 @@
+# <a name="title"></a> magic_shell [![Build Status](https://secure.travis-ci.org/customink-webops/magic_shell.png)](http://travis-ci.org/customink-webops/magic_shell)
+
+
 Description
 ===========
 
