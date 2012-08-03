@@ -25,7 +25,14 @@ Use the `magic_shell_alias` resource to create a command alias.
 ```ruby
 magic_shell_alias 'myrailsapp' do
   command 'cd /opt/myrailsapp/current'
-  action :add
+end
+```
+
+You can also remove aliases:
+
+```ruby
+magic_shell_alias 'myrailsapp' do
+  action: remove
 end
 ```
 
