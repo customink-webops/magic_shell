@@ -32,7 +32,7 @@ You can also remove aliases:
 
 ```ruby
 magic_shell_alias 'myrailsapp' do
-  action: remove
+  action :remove
 end
 ```
 
