@@ -1,10 +1,15 @@
 magic_shell CHANGELOG
 =====================
 
+0.1.5
+----
+
+* The default action for the alias resource is now :add
+
 0.1.4
 -----
 
-* The default action for the alias resource is now :add
+* The default action for the alias resource is now :create
 * Formatting changes to the metadata, README, and CHANGELOG
 
 0.1.3
