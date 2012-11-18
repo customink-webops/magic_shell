@@ -14,10 +14,10 @@ None
 
 Usage
 -----
-Include the recipe to use the resource in your cookbook.
+Update the `metadata.rb` for your cookbook to depend on magic_shell
 
-```ruby
-include_recipe 'magic_shell'
+```ruby metadata.rb
+depends 'magic_shell'
 ```
 
 Use the `magic_shell_alias` resource to create a command alias.
@@ -28,6 +28,8 @@ magic_shell_alias 'myrailsapp' do
 end
 ```
 
+This will alias `myrailsapp` to `cd /opt/myrailsapp/current`.
+
 You can also remove aliases:
 
 ```ruby
@@ -36,7 +38,23 @@ magic_shell_alias 'myrailsapp' do
 end
 ```
 
-This will alias `myrailsapp` to `cd /opt/myrailsapp/current`.
+Use the `magic_shell_environment` resource to create a shell environment variable.
+
+```ruby
+magic_shell_environment 'EDITOR' do
+  value 'vim'
+end
+```
+
+This will export an `EDITOR` environment variable with a value of `vim`.
+
+You can also remove environment variables:
+
+```ruby
+magic_shell_environment 'EDITOR' do
+  action :remove
+end
+```
 
 Contributing
 ------------
