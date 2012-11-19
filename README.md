@@ -16,7 +16,7 @@ Usage
 -----
 Update the `metadata.rb` for your cookbook to depend on magic_shell
 
-```ruby metadata.rb
+```ruby
 depends 'magic_shell'
 ```
 
