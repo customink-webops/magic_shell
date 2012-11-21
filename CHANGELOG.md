@@ -1,5 +1,9 @@
 magic_shell CHANGELOG
 =====================
+0.2.0
+----
+
+* Add `magic_shell_environment`
 
 0.1.5
 ----
