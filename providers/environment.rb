@@ -11,7 +11,6 @@ action :add do
       content file_contents
       action :nothing
     end
-    node.set['magic_shell']['environment'] << { environment_name: new_resource.value }
 
     resource.run_action(:create)
     new_resource.updated_by_last_action(true) if resource.updated_by_last_action?
