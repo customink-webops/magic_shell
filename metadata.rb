@@ -1,4 +1,5 @@
 maintainer 'CustomInk, LLC'
+name 'magic_shell'
 maintainer_email 'webops@customink.com'
 license 'Apache 2.0'
 description 'Installs/Configures command_alias'
