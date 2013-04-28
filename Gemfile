@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'chef',             ENV['CHEF_VERSION'] || '>= 10.0'
+gem 'chef', ENV['CHEF_VERSION'] || '>= 10.0'
 
 group :test do
   gem 'chefspec',         '~> 1.0.0'
