@@ -3,7 +3,6 @@ rvm:
   - 1.9.2
   - 1.9.3
   - 2.0.0
-  - ruby-head
 env:
   - CHEF_VERSION='~> 10.0'
   - CHEF_VERSION='~> 11.0'
