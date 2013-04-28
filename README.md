@@ -28,6 +28,8 @@ magic_shell_alias 'myrailsapp' do
 end
 ```
 
+- Note: `action :add` is required if chef version is less than '0.10.10'
+
 This will alias `myrailsapp` to `cd /opt/myrailsapp/current`.
 
 You can also remove aliases:
@@ -47,6 +49,8 @@ end
 ```
 
 This will export an `EDITOR` environment variable with a value of `vim`.
+
+- Note: `action :add` is required if chef version is less than '0.10.10'
 
 You can also remove environment variables:
 
