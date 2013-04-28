@@ -1,1 +1,1 @@
-default['magic_shell']['environment'] = []
+default['magic_shell']['environment'] = {}
