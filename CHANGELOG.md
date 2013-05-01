@@ -1,5 +1,13 @@
 magic_shell CHANGELOG
 =====================
+
+0.3.0
+----
+
+* Full test suite
+* Test with strainer
+* Support for cross-Chef version default_action
+
 0.2.0
 ----
 
