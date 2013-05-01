@@ -1,6 +1,11 @@
 magic_shell CHANGELOG
 =====================
 
+0.3.1, 0.3.2
+-----------
+
+* **No changes** - chefigonre with `knife cookbook site share` was being ignored, so unnecessary artifacts were uploaded
+
 0.3.0
 ----
 
