@@ -8,6 +8,9 @@ attribute :environment_variable,
 attribute :value,
   :kind_of => String,
   :default => :add
+attribute :expand,
+  :kind_of => [TrueClass, FalseClass],
+  :default => false
 
 # Default action for Chef <= 10.8
 def initialize(*args)

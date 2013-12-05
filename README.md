@@ -48,6 +48,15 @@ end
 
 This will export an `EDITOR` environment variable with a value of `vim`.
 
+By default environment variables set using `magic_shell_environment` do not permit variable expansion. You can allow this using the `expand` option:
+
+```ruby
+magic_shell_environment 'PATH' do
+  value '/my/custom.path:$PATH'
+  expand true
+end
+```
+
 You can also remove environment variables:
 
 ```ruby
