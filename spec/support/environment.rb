@@ -11,6 +11,10 @@ RSpec::Matchers.define :set_a_magic_shell_environment_variable do |variable|
     @value = value
   end
 
+  chain :with_quote do |quote|
+    @quote = quote
+  end
+
   failure_message_for_should do |chef_run|
     if chef_run.file(filepath)
       "expected `#{filepath}` to have content:\n\n   #{content}\n\nbut got:\n\n   #{chef_run.file(filepath).content.split("\n").join("\n   ")}"
@@ -34,6 +38,7 @@ RSpec::Matchers.define :set_a_magic_shell_environment_variable do |variable|
   end
 
   def content
-    @value ? "export #{@variable}='#{@value}'" : "export #{@variable}"
+    q = @quote || "'"
+    @value ? "export #{@variable}=#{q}#{@value}#{q}" : "export #{@variable}"
   end
 end
