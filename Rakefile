@@ -28,6 +28,9 @@ task :integration do
   end
 end
 
+require 'stove/rake_task'
+Stove::RakeTask.new
+
 # We cannot run Test Kitchen on Travis CI yet...
 namespace :travis do
   desc 'Run tests on Travis'

@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rake'
+group :test, :development do
+  gem 'rake'
+  gem 'stove', '~> 1.1'
+end
 
 group :test do
   gem 'berkshelf',  '~> 3.0.0.beta'
