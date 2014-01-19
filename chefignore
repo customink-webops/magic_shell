@@ -1,7 +1,0 @@
-spec/
-.gitignore
-.rspec
-.travis.yml
-Gemfile
-Gemfile.lock
-Strainerfile

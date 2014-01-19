@@ -1,0 +1,27 @@
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+  data_path: test/shared
+
+platforms:
+  - name: ubuntu-12.04
+  - name: centos-6.4
+
+suites:
+  #
+  # Alias suites
+  #
+  - name: magic_shell_alias_add
+    run_list: magic_shell_alias::add
+  - name: magic_shell_alias_remove
+    run_list: magic_shell_alias::remove
+
+  #
+  # Environment suites
+  #
+  - name: magic_shell_environment_add
+    run_list: magic_shell_environment::add
+  - name: magic_shell_environment_remove
+    run_list: magic_shell_environment::remove
