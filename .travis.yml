@@ -1,9 +1,6 @@
-language: ruby
 rvm:
-  - 1.9.2
   - 1.9.3
-env:
-  - CHEF_VERSION='~> 10.0'
-  - CHEF_VERSION='~> 11.0'
+  - 2.0.0
+  - 2.1.0
 script:
-  - bundle exec strainer test
+  - bundle exec rake travis:ci
