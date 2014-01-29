@@ -55,7 +55,7 @@ magic_shell_environment 'EDITOR' do
   owner 'username'
   group 'groupname'
   mode  '0600'
-  destination '/home/user/.profile.d/
+  destination '/home/user/.profile.d/'
 end
 ```
 
