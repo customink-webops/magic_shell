@@ -48,6 +48,17 @@ magic_shell_environment 'EDITOR' do
 end
 ```
 
+Userspace environment variables and permissions for security or virtualenvs
+```ruby
+magic_shell_environment 'EDITOR' do
+  value 'vim'
+  owner 'username'
+  group 'groupname'
+  mode  '0600'
+  destination '/home/user/.profile.d/
+end
+```
+
 Contributing
 ------------
 1. Fork the repo
