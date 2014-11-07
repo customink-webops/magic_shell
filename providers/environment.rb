@@ -23,7 +23,7 @@
 #
 # Delegate update actions to inline resources
 #
-use_inline_resources
+use_inline_resources if defined?(use_inline_resources)
 
 #
 # This provider supports why-run mode.
