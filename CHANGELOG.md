@@ -1,6 +1,11 @@
 magic_shell CHANGELOG
 =====================
 
+1.0.1
+-----
+* changed file permissions to be 0644 instead of 755
+
+
 1.0.0
 -----
 * Refactor providers to support whyrun mode
