@@ -25,6 +25,7 @@ default_action :add
 
 attribute :environment_variable, kind_of: String, name_attribute: true
 attribute :value,                kind_of: String
+attribute :filename,             kind_of: String, default: nil
 attribute :owner,                kind_of: String, default: 'root'
 attribute :group,                kind_of: String, default: 'root'
 attribute :mode,                 kind_of: String, default: '0644'
