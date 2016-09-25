@@ -29,3 +29,4 @@ attribute :owner,                kind_of: String, default: 'root'
 attribute :group,                kind_of: String, default: 'root'
 attribute :mode,                 kind_of: String, default: '0644'
 attribute :destination,          kind_of: String, default: '/etc/profile.d'
+attribute :sensitive,            kind_of: [ TrueClass, FalseClass ], default: false
