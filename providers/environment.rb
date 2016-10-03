@@ -65,5 +65,9 @@ def destination
 end
 
 def filename
-  new_resource.environment_variable.to_s.gsub(/\s/, '_')
+  if new_resource.filename.nil?
+    new_resource.environment_variable.to_s.gsub(/\s/, '_')
+  else
+    new_resource.filename.to_s.gsub(/\s/, '_')
+  end
 end
