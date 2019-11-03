@@ -2,7 +2,7 @@ magic_shell Cookbook
 ====================
 [![Build Status](https://secure.travis-ci.org/customink-webops/magic_shell.png)](http://travis-ci.org/customink-webops/magic_shell)
 
-Provides utility for adding some syntactic sugar to your shell.
+Provides utility for adding some syntactic sugar to your shell. Shell chef cookbook to setup the magic values.
 
 Usage
 -----
